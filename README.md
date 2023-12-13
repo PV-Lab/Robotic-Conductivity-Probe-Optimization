@@ -26,7 +26,10 @@ Ensure all dependencies are installed using pip:
 ```bash
 pip install numpy pandas matplotlib scipy opencv-python scikit-learn
 ```
-- `segment_anything` must be installed separately as per its documentation.
+Meta AI's  is used to segment the pixels of each material.
+
+- `segment_anything` must be installed separately as per its [documentation](https://github.com/facebookresearch/segment-anything?tab=readme-ov-file).
+- To run the `segment_anything`, a [checkpoint of model weights must be downloaded](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) and its file path must be specified when running [Pose_and_Path_Optimization.ipynb](./Pose_and_Path_Optimization.ipynb).
 
 ## Usage
 ### Image Segmentation
